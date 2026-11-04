@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Гайды детского психолога Гюнель Таибовой для родителей детей 2–14 лет: готовые фразы, игры и планы.">
+<title>Спокойнее с ребёнком</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: quiet single column, large type, products as a ruled list, one ink-green accent */
+:root{
+  --bg:#F7F7F5; --paper:#FFFFFF; --ink:#151515; --muted:#6B6B66; --line:#E3E3DE;
+  --accent:#24453A; --accent-ink:#FFFFFF; --soft:#EEF1EE;
+  --font:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121312; --paper:#1A1B1A; --ink:#F0F0EC; --muted:#9C9C96; --line:#2A2C2A;
+  --accent:#9CC4B2; --accent-ink:#121312; --soft:#1C2420; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121312; --paper:#1A1B1A; --ink:#F0F0EC; --muted:#9C9C96; --line:#2A2C2A;
+  --accent:#9CC4B2; --accent-ink:#121312; --soft:#1C2420; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.55}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-weight:600;margin:0;line-height:1.1;letter-spacing:-.02em;text-wrap:balance}
+a{color:inherit}
+.label{font-size:13px;font-weight:500;color:var(--muted);letter-spacing:.02em}
+
+.top{padding-block:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-weight:600;text-decoration:none;font-size:16px}
+.top nav{display:flex;gap:22px;font-size:15px}
+.top nav a{text-decoration:none;color:var(--muted)}
+.top nav a:hover{color:var(--ink)}
+
+.hero{padding-block:56px 64px;display:flex;flex-direction:column;gap:24px}
+.htext{min-width:0}
+.me{margin:0}
+.me img{display:block;width:256px;height:256px;object-fit:cover;border-radius:50%}
+.hero h1{font-size:clamp(40px,7vw,76px);max-width:11ch;margin-top:18px}
+.hero p{max-width:32em;color:var(--muted);margin:24px 0 0;font-size:19px}
+.facts{margin-top:28px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+.facts span::before{content:"✓ ";color:var(--accent);font-weight:700}
+
+.start{padding-block:0 72px}
+.start h2{font-size:22px}
+.picks{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pick{font:inherit;font-size:15px;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer;transition:border-color .2s,background .2s}
+.pick:hover{border-color:var(--ink)}
+
+.products h2{font-size:clamp(28px,4vw,40px)}
+.list{margin-top:28px;border-top:1px solid var(--line)}
+.prod{display:grid;grid-template-columns:1fr 200px;gap:32px;padding-block:36px;border-bottom:1px solid var(--line);scroll-margin-top:16px;transition:background .5s}
+.prod.flash{background:var(--soft)}
+.prod > div{min-width:0}
+.prod h3{font-size:clamp(24px,3vw,30px)}
+.meta{margin-top:8px;font-size:14px;color:var(--muted)}
+.hook{margin:16px 0 0;font-size:19px;line-height:1.5;max-width:34em}
+.why{margin:18px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;max-width:36em}
+.why li{position:relative;padding-left:20px}
+.why li::before{content:"—";position:absolute;left:0;color:var(--muted)}
+details{margin-top:16px;font-size:15px;max-width:36em}
+summary{cursor:pointer;font-weight:500;list-style:none;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line)}
+summary::-webkit-details-marker{display:none}
+details p{color:var(--muted);margin:10px 0 0}
+.buy{display:flex;flex-direction:column;gap:14px;align-items:stretch}
+.price{font-size:32px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1}
+.price s{font-size:17px;font-weight:400;color:var(--muted);margin-left:8px}
+.off{font-style:normal;display:inline-block;margin-left:8px;vertical-align:middle;font-size:13px;font-weight:600;letter-spacing:0;background:var(--soft);color:var(--accent);border-radius:999px;padding:3px 9px}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:600;font-size:16px;border-radius:12px;padding:14px 18px;background:var(--accent);color:var(--accent-ink);transition:opacity .15s}
+.btn:hover{opacity:.88}
+.btn:focus-visible,.pick:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.all{margin-top:40px;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:32px;display:grid;grid-template-columns:1fr 200px;gap:32px;align-items:end}
+.all h3{font-size:clamp(24px,3vw,30px)}
+.all p{color:var(--muted);margin:10px 0 0;max-width:34em}
+
+.about{padding-block:88px 64px}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about h2{font-size:26px;margin-top:8px}
+.about p{margin:12px 0 0;color:var(--muted)}
+.book{display:flex;gap:18px;align-items:center;margin-top:24px;text-decoration:none;max-width:420px}
+.book img{width:96px;height:auto;border-radius:8px;flex:none;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.book span{display:flex;flex-direction:column;gap:6px;min-width:0}
+.book small{font-size:13px;color:var(--muted)}
+.book b{font-weight:600;line-height:1.3}
+.book u{color:var(--accent);font-weight:600;text-underline-offset:4px}
+.chan{display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:18px 20px;border:1px solid var(--line);border-radius:14px;text-decoration:none;max-width:420px;transition:border-color .2s}
+.chan:hover{border-color:var(--accent)}
+.chan small{font-size:13px;color:var(--muted)}
+.chan b{font-weight:600}
+.chan span{font-size:15px;color:var(--muted)}
+.creds{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.creds li{display:grid;grid-template-columns:96px 1fr;gap:16px;font-size:15px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.creds b{color:var(--ink);font-weight:600}
+.faq details{border-bottom:1px solid var(--line);padding-block:14px;margin:0;max-width:none}
+.faq summary{text-decoration:none;font-size:16px}
+footer{border-top:1px solid var(--line);padding-block:28px 44px;font-size:15px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px}
+footer b{color:var(--ink);font-weight:500}
+
+
+.shots{display:flex;gap:10px;overflow-x:auto;margin-top:20px;padding-bottom:6px;scroll-snap-type:x mandatory}
+.shots button{flex:none;border:1px solid var(--line);border-radius:10px;padding:0;background:var(--paper);cursor:zoom-in;scroll-snap-align:start;overflow:hidden}
+.shots img{display:block;height:200px;width:auto;max-width:none}
+.sample{margin-top:20px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px;max-width:36em;font-size:15px}
+.sample b{display:block;font-weight:600;margin-bottom:8px}
+.sample p{margin:6px 0 0}
+.sample .no{color:var(--muted)}
+.guar{margin-top:40px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;max-width:40em}
+.guar .mark{width:40px;height:40px;border-radius:50%;background:var(--soft);color:var(--accent);display:grid;place-items:center;font-weight:700}
+.guar h3{font-size:20px;letter-spacing:-.01em}
+.guar p{margin:6px 0 0;color:var(--muted)}
+.box{position:fixed;inset:0;background:rgba(0,0,0,.82);display:grid;place-items:center;z-index:20;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));cursor:zoom-out}
+.box img{max-height:92vh;max-width:100%;border-radius:8px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:15;background:var(--paper);border-top:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));display:none;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s}
+.bar.on{transform:none}
+.bar div{min-width:0;flex:1;font-size:14px;line-height:1.3}
+.bar div b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
+.bar .btn{padding:11px 20px;font-size:15px}
+@media (max-width:720px){.bar{display:flex}footer{padding-bottom:110px}.shots img{height:170px}}
+@media (max-width:720px){
+  .hero{padding-block:28px 48px;gap:20px}
+  .me img{width:208px;height:208px}
+  .prod,.all{grid-template-columns:1fr;gap:22px}
+  .all{padding:24px}
+  .about{padding-block:64px 48px}
+  .about .wrap{grid-template-columns:1fr;gap:32px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="brand" href="#">Гюнель Таибова</a>
+  <nav><a href="#guides">Гайды</a><a href="#about">Об авторе</a><a href="#contacts">Контакты</a></nav>
+</header>
+
+<section class="wrap hero">
+  <figure class="me"><img src="img/me-face.jpg" alt="Гюнель Таибова" width="240" height="240"></figure>
+  <div class="htext">  
+  <div class="label">Гайды для родителей детей 2–14 лет</div>
+  <h1>Спокойнее с ребёнком каждый день</h1>
+  <p>Готовые фразы, игры и планы от детского психолога и нейропсихолога. Каждый гайд можно открыть в трудную минуту и сразу применить.</p>
+  <div class="facts"><span>PDF, удобно с телефона</span><span>доступ навсегда</span><span>автор книги <a href="https://www.litres.ru/book/gunel-taibova/pozitivnoe-vospitanie-bez-slez-i-nakazaniy-72144109/" target="_blank" rel="noopener">«Позитивное воспитание»</a> (АСТ)</span></div>
+
+</div>
+</section>
+
+<section class="wrap start">
+  <h2>Что для вас сейчас важнее?</h2>
+  <div class="picks">
+    <button class="pick" id="p1" data-go="phrases">Не нахожу слов в моменте</button>
+    <button class="pick" id="p2" data-go="sensory">Ребёнок не может успокоиться</button>
+    <button class="pick" id="p3" data-go="games">Сильные чувства каждый день</button>
+    <button class="pick" id="p4" data-go="success">Хочу развивать характер</button>
+  </div>
+</section>
+
+<section class="wrap products" id="guides">
+  <h2>Гайды</h2>
+  <div class="list">
+
+    <article class="prod" id="phrases">
+      <div>
+        <h3>Что сказать вместо…</h3>
+        <div class="meta">20 ситуаций · 2–14 лет · шпаргалка на холодильник</div>
+        <p class="hook">Ребёнок кричит «я тебя ненавижу», а у вас в голове пусто или хочется крикнуть в ответ. В этом гайде уже собраны слова, которые остановят ссору и сохранят вашу близость.</p>
+        <ul class="why">
+          <li>20 самых частых трудных ситуаций, от истерики в магазине до подростка, который закрылся в комнате.</li>
+          <li>По каждой вы увидите, какие привычные фразы только разжигают конфликт и чем их заменить.</li>
+          <li>Шпаргалка с главной фразой на каждый случай, которую можно сохранить в телефон и открыть за секунду.</li>
+          <li>Пошаговый план, как помириться с ребёнком, если вы всё-таки сорвались.</li>
+        </ul>
+        <details><summary>Что внутри</summary><p>Три принципа, на которых держатся все фразы. Двадцать ситуаций по одной схеме: что происходит с ребёнком, неудачные и удачные фразы, что сделать после. Отдельный раздел о том, как вернуть контакт, если вы сорвались.</p></details>
+        <div class="sample"><b>Пример из гайда: «Я тебя ненавижу»</b>
+          <p class="no">❌«Как ты можешь так говорить матери!»</p>
+          <p class="no">Ребёнок получает стыд вместо понимания и в следующий раз просто спрячет злость.</p>
+          <p>✅«Ты злишься, а я всё равно тебя люблю»</p>
+          <p class="no">Ребёнок узнаёт, что ваша связь выдерживает его гнев.</p></div>
+      </div>
+      <div class="buy"><div class="price">990 ₽<s>1 990 ₽</s><em class="off">−50%</em></div><a class="btn" data-pay="phrases" href="#contacts">Купить</a></div>
+    </article>
+
+    <article class="prod" id="sensory">
+      <div>
+        <h3>Сенсорные игры для спокойствия, сна и учёбы</h3>
+        <div class="meta">26 игр · 2–10 лет · от 1 до 5 минут · без реквизита</div>
+        <p class="hook">Когда ребёнок на взводе, слова до него не доходят, а тело откликается сразу. Пять минут игры вместо часа уговоров перед уроками, сном или после истерики.</p>
+        <ul class="why">
+          <li>26 игр на любую ситуацию дня: проснуться без слёз, собраться перед уроками, выпустить злость, успокоить тревогу и уснуть.</li>
+          <li>Ничего не нужно покупать, все игры проходят дома, в машине или в очереди.</li>
+          <li>Каждая игра с иллюстрацией, пошаговой инструкцией и готовой фразой для ребёнка.</li>
+          <li>Таблица в конце подскажет, какую игру выбрать, когда думать некогда.</li>
+        </ul>
+        <details><summary>Что внутри</summary><p>Короткая теория о том, почему тело успокаивает быстрее слов, и пять правил. Игры в пяти разделах: утро и учёба, злость, тревога, сон, дыхание и игры вне дома. В конце список того, что стоит докупить, и признаки, с которыми лучше обратиться к специалисту.</p></details>
+        <div class="shots"><button type="button" aria-label="Увеличить страницу"><img src="img/sen1.jpg" alt="Обложка гайда «Сенсорные игры»" loading="lazy"></button><button type="button" aria-label="Увеличить страницу"><img src="img/sen2.jpg" alt="Игра «Котик потягивается»" loading="lazy"></button><button type="button" aria-label="Увеличить страницу"><img src="img/sen3.jpg" alt="Игра «Блинчик»" loading="lazy"></button></div>
+      </div>
+      <div class="buy"><div class="price">1 490 ₽<s>2 990 ₽</s><em class="off">−50%</em></div><a class="btn" data-pay="sensory" href="#contacts">Купить</a></div>
+    </article>
+
+
+    <article class="prod" id="games">
+      <div>
+        <h3>Большие игры для больших чувств</h3>
+        <div class="meta">66 игр · 14 разделов · 2–14 лет</div>
+        <p class="hook">Самый полный сборник о детских чувствах. Ребёнок научится понимать свою злость, страх, грусть и стыд и справляться с ними, а вы будете знать, что делать в любой трудный момент.</p>
+        <ul class="why">
+          <li>66 игр по 14 темам и отдельный раздел для подростков 10–14 лет.</li>
+          <li>SOS-карточки для острых моментов: истерика в разгаре, ребёнок кусается, кричит сорок минут, не может уснуть от тревоги.</li>
+          <li>Разборы диалогов: что обычно говорят родители и что сказать вместо этого.</li>
+          <li>Карты поведения, которые помогают понять, где возрастная норма, а где пора к специалисту.</li>
+          <li>Тест в начале покажет, с какого раздела начать именно вам.</li>
+        </ul>
+        <details><summary>Что внутри</summary><p>Тест «С чего начать», навигатор по возрасту и по проблемам, разборы диалогов в плохом и хорошем варианте, ошибки родителей, восстановление после конфликта, эмоциональная аптечка и 30 фраз поддержки.</p></details>
+        <div class="shots"><button type="button" aria-label="Увеличить страницу"><img src="img/g1.jpg" alt="Обложка сборника" loading="lazy"></button><button type="button" aria-label="Увеличить страницу"><img src="img/g2.jpg" alt="SOS-раздел" loading="lazy"></button><button type="button" aria-label="Увеличить страницу"><img src="img/g3.jpg" alt="Диалоги: плохой и хороший вариант" loading="lazy"></button></div>
+      </div>
+      <div class="buy"><div class="price">4 990 ₽<s>9 990 ₽</s><em class="off">−50%</em></div><a class="btn" data-pay="games" href="#contacts">Купить</a></div>
+    </article>
+    <article class="prod" id="success">
+      <div>
+        <h3>Как вырастить успешного ребёнка</h3>
+        <div class="meta">10 качеств · 2–14 лет · план на первый месяц</div>
+        <p class="hook">Взрослые, которые довольны своей жизнью, в детстве отличались от сверстников прежде всего характером. Этот гайд показывает, как развивать его дома, без репетиторов и дорогих кружков: за ужином, во время уборки и в разговоре перед сном.</p>
+        <ul class="why">
+          <li>Десять качеств, которые сильнее всего влияют на взрослую жизнь: самоконтроль, настойчивость, любопытство, умение дружить, самостоятельность, обращение с деньгами и другие.</li>
+          <li>В каждой главе конкретные приёмы, игра для всей семьи и фразы, которые помогают и которые мешают.</li>
+          <li>Таблица домашних обязанностей по возрасту от 2 до 14 лет и правила карманных денег.</li>
+          <li>Семь родительских ловушек, в которые попадают из любви к ребёнку.</li>
+          <li>План на первый месяц: восемь маленьких привычек, которые семья действительно сохранит.</li>
+        </ul>
+        <details><summary>Что внутри</summary><p>Десять глав по качествам, таблица домашних обязанностей по возрасту от 2 до 14 лет, нормы сна, семь родительских ловушек и чек-лист для самопроверки в конце месяца.</p></details>
+        <div class="shots"><button type="button" aria-label="Увеличить страницу"><img src="img/s1.jpg" alt="Обложка гайда" loading="lazy"></button><button type="button" aria-label="Увеличить страницу"><img src="img/s2.jpg" alt="Глава о самоконтроле" loading="lazy"></button><button type="button" aria-label="Увеличить страницу"><img src="img/s3.jpg" alt="Обязанности по возрасту" loading="lazy"></button></div>
+      </div>
+      <div class="buy"><div class="price">6 990 ₽<s>13 990 ₽</s><em class="off">−50%</em></div><a class="btn" data-pay="success" href="#contacts">Купить</a></div>
+    </article>
+  </div>
+
+  <div class="all" id="all">
+    <div>
+      <div class="label">Выгоднее</div>
+      <h3 style="margin-top:6px">Все четыре гайда</h3>
+      <p>Всё, чтобы справляться с трудными моментами уже сегодня и растить характер ребёнка на годы вперёд. Вы экономите 10 000 ₽.</p>
+    </div>
+    <div class="buy"><div class="price">9 990 ₽<s>19 990 ₽</s><em class="off">−50%</em></div><a class="btn" data-pay="all" href="#contacts">Купить все</a></div>
+  </div>
+  <div class="guar">
+    <div class="mark">✓</div>
+    <div><h3>Если гайд не подойдёт, я верну деньги</h3>
+    <p>Напишите мне в течение трёх дней после покупки, и я верну оплату полностью.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <div class="label">Об авторе</div>
+      <h2>Гюнель Таибова</h2>
+      <p>Детский психолог и нейропсихолог, специалист по детско-родительским отношениям. Помогаю родителям выстраивать с ребёнком тёплые, спокойные отношения без криков и наказаний.</p>
+      <ul class="creds">
+        <li><b>5+ лет</b>работаю с семьями и детьми от 2 до 14 лет</li>
+        <li><b>Магистр</b>Московский институт психоанализа</li>
+        <li><b>Обучение</b>постоянно повышаю квалификацию в ведущих университетах мира, среди них University of Pennsylvania и Институт психотерапии и медицинской психологии</li>
+      </ul>
+      <a class="book" href="https://www.litres.ru/book/gunel-taibova/pozitivnoe-vospitanie-bez-slez-i-nakazaniy-72144109/" target="_blank" rel="noopener"><img src="img/book.jpg" alt="Обложка книги «Позитивное воспитание: без слёз и наказаний»"><span><small>Моя книга, издательство АСТ</small><b>«Позитивное воспитание: без слёз и наказаний»</b><u>Читать на Литрес →</u></span></a>
+      <a class="chan" href="https://t.me/gunel_psychology" target="_blank" rel="noopener"><small>Telegram-канал</small><b>Разборы ситуаций от родителей</b><span>Разбираю реальные вопросы родителей: что происходит с ребёнком и что сказать. Подписаться →</span></a>
+    </div>
+    <div class="faq">
+      <div class="label" style="margin-bottom:4px">Вопросы</div>
+      <details><summary>Как я получу гайд?</summary><p>После оплаты вы получите ссылку на PDF-файл. Его удобно читать с телефона и можно сохранить себе.</p></details>
+      <details><summary>Какой выбрать, если нужны все?</summary><p>Берите комплект «Все четыре гайда», так выходит на 10 000 ₽ выгоднее. Начните с «Что сказать вместо…», он помогает уже в первый трудный момент, а остальные открывайте в своём темпе. <a href="#all">К комплекту →</a></p></details>
+      <details><summary>У меня совсем нет времени читать. Справлюсь?</summary><p>Гайды написаны для уставших родителей. Их не нужно читать от начала до конца: открываете нужную ситуацию или игру, и за пару минут у вас есть готовые слова или действие. Большинство сенсорных игр занимает от одной до пяти минут.</p></details>
+      <details><summary>Я уже много читала о воспитании. Чем это отличается от статей в интернете?</summary><p>В статьях обычно объясняют, почему ребёнок так себя ведёт, а в гайдах я даю конкретные слова и игры, которые можно применить сегодня вечером. Всё собрано в одном файле, разложено по ситуациям и возрастам, и вам не нужно искать ответ по разным источникам в тот момент, когда ребёнок уже кричит.</p></details>
+      <details><summary>Подойдёт ли моему ребёнку?</summary><p>Гайды рассчитаны на детей от 2 до 14 лет, «Сенсорные игры» на детей от 2 до 10 лет. Внутри есть подсказки по возрасту, а в «Больших играх для больших чувств» отдельный раздел для подростков.</p></details>
+      <details><summary>А если у меня не получится?</summary><p>С первого раза получается не у всех, и это нормально. Начните с одной ситуации и одной-двух фраз, этого достаточно, чтобы увидеть первые изменения. Если что-то не работает, напишите мне, разберёмся вместе. А если гайд совсем не подойдёт, я верну деньги в течение трёх дней после покупки.</p></details>
+      <details><summary>Можно ли задать вопрос?</summary><p>Да, напишите мне в Instagram или Telegram, ссылки ниже.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="bar" id="bar" aria-hidden="true"><div><b id="barT"></b><span id="barP"></span></div><a class="btn" id="barB" href="#contacts" tabindex="-1">Купить</a></div>
+<div class="box" id="box" hidden><img id="boxImg" alt=""></div>
+
+<footer id="contacts">
+  <div class="wrap">
+    <span><b>Instagram</b> <a href="https://instagram.com/gunel.tg">@gunel.tg</a></span>
+    <span><b>Telegram</b> <a href="https://t.me/gunel_tg">@gunel_tg</a></span>
+    <span><b>Канал с разборами</b> <a href="https://t.me/gunel_psychology">@gunel_psychology</a></span>
+    <span><b>Почта</b> tg.psychologist@mail.ru</span>
+  </div>
+</footer>
+
+<script>
+// Ссылки на оплату payform: вставьте адрес в кавычки
+const PAY = {
+  phrases: "https://payform.ru/8mcWpym/",
+  sensory: "https://payform.ru/3gcWpvB/",
+  games:   "https://payform.ru/dicWpkP/",
+  success: "https://payform.ru/pscWprn/",
+  all:     "https://payform.ru/jvcWpEm/"
+};
+document.querySelectorAll("[data-pay]").forEach(a => {
+  const url = PAY[a.dataset.pay];
+  if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+});
+document.querySelectorAll(".pick").forEach(b => b.addEventListener("click", () => {
+  const el = document.getElementById(b.dataset.go);
+  if (!el) return;
+  el.scrollIntoView({ block: "start" });
+  el.classList.add("flash");
+  setTimeout(() => el.classList.remove("flash"), 1600);
+}));
+
+// закреплённая кнопка на телефоне
+const bar=document.getElementById("bar"), barT=document.getElementById("barT"), barP=document.getElementById("barP"), barB=document.getElementById("barB");
+const vis=new Map();
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>vis.set(e.target,e.intersectionRatio));
+  let best=null,r=0; vis.forEach((v,k)=>{if(v>r){r=v;best=k}});
+  if(best&&r>0.15){
+    const a=best.querySelector("[data-pay]");
+    barT.textContent=(best.querySelector("h3")||{}).textContent||"";
+    barP.textContent=best.querySelector(".price").childNodes[0].textContent.trim();
+    barB.href=a.href; if(a.target){barB.target=a.target;barB.rel="noopener"}else{barB.removeAttribute("target")}
+    bar.classList.add("on");
+  } else bar.classList.remove("on");
+},{threshold:[0,.15,.3,.5,.7,1]});
+document.querySelectorAll(".prod,.all").forEach(el=>io.observe(el));
+// увеличение страниц
+const box=document.getElementById("box"), boxImg=document.getElementById("boxImg");
+document.querySelectorAll(".shots button").forEach(b=>b.addEventListener("click",()=>{const i=b.querySelector("img");boxImg.src=i.src;boxImg.alt=i.alt;box.hidden=false}));
+box.addEventListener("click",()=>{box.hidden=true});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")box.hidden=true});
+</script>
+
+</body>
+</html>
